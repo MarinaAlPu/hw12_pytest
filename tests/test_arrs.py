@@ -32,3 +32,4 @@ def test_slice():
     assert arrs.my_slice([], 0, 0) == []
     assert arrs.my_slice([], 0) == []
     assert arrs.my_slice(['а', 'б', 'вгдеё']) == ['а', 'б', 'вгдеё']
+    assert arrs.my_slice([1, 2, 3], -4, 2) == [1, 2]
