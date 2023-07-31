@@ -7,4 +7,7 @@ def get_val(collection, key, default='git'):
     :param default: значение по умолчанию
     :return: значение по ключу или значение по-умолчанию
     """
-    return collection.get(key, 'git')
+    if type(collection) == dict:
+        return collection.get(key, 'git')
+    else:
+        return default
